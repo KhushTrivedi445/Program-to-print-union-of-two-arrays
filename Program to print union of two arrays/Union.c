@@ -21,7 +21,7 @@ int main () {
         scanf("%d",&b[i]);
      }
 
-     for(int i=0;i<x;i++){
+     for(int i=0;i<x;i++){  // This loop merges two arrays
         a[n+i]=b[i];
      }
 
@@ -31,7 +31,7 @@ int main () {
      }
 
 
-      for(int i=0;i<(n+x);i++){
+      for(int i=0;i<(n+x);i++){   // This loop sorts the merged array
         for(int j=i+1;j<(n+x);j++) {
             if(a[i]>a[j]){
                 
@@ -50,7 +50,7 @@ int main () {
 
 
    int y=0;
-    for(int i=0;i<(n+x);i++){
+    for(int i=0;i<(n+x);i++){    // This loop removes duplicates from the sorted array
         if(a[i]!=a[i+1]){
         a[y++]=a[i];
     }     
@@ -59,7 +59,7 @@ int main () {
        
        
     printf("\nUnion pf two arrays is :");
-    for(int i=0;i<y;i++){
+    for(int i=0;i<y;i++){    // This loop gives the union of two arrays
          printf("\n%d",a[i]);
     }
 
